@@ -25,6 +25,7 @@ One longest palindrome that can be built is "dccaccd", whose length is 7.
 解题思路：
 1. 区分大小写
 2. 统计每个字符出现的总数
+3. 注意 奇数个数的字符的处理
 '''
 
 class Solution(object):
@@ -46,6 +47,7 @@ class Solution(object):
             if dict[key]%2 == 0:
                 result += dict[key]
             else:
+                # 奇数个数的字符（n-1）个字符可用，最后字符是否可用取决是否已经存在中间字符
                 result += (dict[key] -1)
                 if not hasMid :
                     hasMid = True
