@@ -1,9 +1,6 @@
 class Solution(object):
     """docstring for problem 1."""
-    def __init__(self, arg):
-        super(, self).__init__()
-        self.arg = arg
-
+    
     def twoSum(self,nums,target):
         dict = {}
         for index in xrange(len(nums)):
