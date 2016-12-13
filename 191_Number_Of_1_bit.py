@@ -1,5 +1,4 @@
 # coding=utf-8
-# coding : UTF-8
 
 '''
 191. Number of 1 Bits
